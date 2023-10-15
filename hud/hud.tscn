@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://0kevckpyhyb2"]
+
+[ext_resource type="Script" path="res://hud/hud.gd" id="1_2o12e"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_2o12e")
+
+[node name="StartButton" type="Button" parent="."]
+offset_left = 80.0
+offset_top = 40.0
+offset_right = 175.0
+offset_bottom = 94.0
+text = "start game
+
+"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
